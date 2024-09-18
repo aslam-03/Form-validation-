@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple form validation</h1>
+        <div class="inputs-group">
+            <form class="form" onsubmit="return validateform()">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <span id="nameerror" class="error"></span>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email">
+                <span id="mailerror" class="error"></span>
+
+                <input type="submit" class="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="../javascript/form.js"></script>
+</body>
+</html>
